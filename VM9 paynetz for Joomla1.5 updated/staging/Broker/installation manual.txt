@@ -1,0 +1,45 @@
+INSTALLATION:
+
+//For ATOM paynetz netbanking
+
+1. Upload the files ps_nbpaynetz.php and ps_ccpaynetz.cfg.php files and directory paynetz_api to the directory (/administrator/components/com_virtuemart/classes/payment)
+1. Upload the file checkout.atompg.php to the directory (/administrator/components/com_virtuemart/html)
+2. Now login to your administration panel (back-end)
+3. Go to Components > Virtuemart > Store > List Payment Methods > New
+4. Ensure the "Active" checkbox is enabled (ticked)
+5. "Payment Method Name" should be Paynetz(Netbanking) (doesn't have to be but it's easier to remember)
+6. "Code" is Pznb (again just easier to remember)
+7. Next to "Payment class name", select ps_nbpaynetz from the drop-down.
+8. For "Payment method type", put a dot next to the HTML-form based (e.g. Paypal) option.
+9. Click on the "SAVE" icon (top-right).
+10. You should be returned to the "Payment Method List" page, click on the Paynetz(Netbanking) entry you just made.
+11. Click on the Configuration tab (next to Payment Method Form tab)
+12. There should be a message saying that ps_nbpaynetz.cfg.php is Writeable. If it isn't then check the permissions on the file using your FTP client.
+13. Complete the fields just under this message as appropriate.
+* Loing Id (Provided by ATOM)
+* Password (Provided by ATOM)
+* Product ID (Provided by ATOM)
+15. Click on the "SAVE" icon again (top-right).
+
+
+// For Atom paynetz Credit/Debit card
+
+1. Upload the files ps_ccpaynetz.php and ps_ccpaynetz.cfg.php files and directory paynetz_api (if not copied earlier) to the directory (/administrator/components/com_virtuemart/classes/payment)
+1. Upload the file checkout.atompg.php to the directory (/administrator/components/com_virtuemart/html)
+2. Now login to your administration panel (back-end)
+3. Go to Components > Virtuemart > Store > List Payment Methods > New
+4. Ensure the "Active" checkbox is enabled (ticked)
+5. "Payment Method Name" should be Paynetz(Credit/Debit Card) (doesn't have to be but it's easier to remember)
+6. "Code" is Pzcc (again just easier to remember)
+7. Next to "Payment class name", select ps_ccpaynetz from the drop-down.
+8. For "Payment method type", put a dot next to the HTML-form based (e.g. Paypal) option.
+9. Click on the "SAVE" icon (top-right).
+10. You should be returned to the "Payment Method List" page, click on the Paynetz(Credit/Debit Card) entry you just made.
+11. Click on the Configuration tab (next to Payment Method Form tab)
+12. There should be a message saying that ps_ccpaynetz.cfg.php is Writeable. If it isn't then check the permissions on the file using your FTP client.
+13. Complete the fields just under this message as appropriate.
+* Loing Id (Merchant Login provided by ATOM)
+* Password (Merchant Password provided by ATOM)
+* Product ID (For marchent's reference)
+15. Click on the "SAVE" icon again (top-right).
+
